@@ -18,6 +18,68 @@ body {
   color: #f1f1f1;
 }
 
+/* De base */
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  background: none;
+  border: none;
+  color: white;
+  /* adapte selon ton thème */
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+/* Responsive pour mobiles */
+@media (max-width: 768px) {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  #nav-menu {
+    display: none;
+    flex-direction: column;
+    background-color: #111;
+    /* fond du menu */
+    top: 100px;
+    /* ajuste selon la hauteur de ton header */
+    right: 0;
+    width: 200px;
+    padding: 10px;
+  }
+
+  #nav-menu.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+
 /* Bande de contact en haut */
 .contact-top {
   background-color: #111;
@@ -105,7 +167,8 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgba(0, 0, 0, 0.7); /* overlay sombre */
+  background: rgba(0, 0, 0, 0.7);
+  /* overlay sombre */
   z-index: 0;
 }
 
@@ -180,7 +243,7 @@ body {
   width: 100%;
   max-width: 500px;
   border-radius: 1rem;
-  box-shadow: 0 0 20px rgba(0,0,0,0.5);
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
 }
 
 /* Texte */
@@ -220,8 +283,10 @@ body {
 }
 
 .whyus {
-  background-color: #111; /* fond sombre */
-  color: #eee; /* texte clair */
+  background-color: #111;
+  /* fond sombre */
+  color: #eee;
+  /* texte clair */
   padding: 60px 20px;
   text-align: center;
 }
@@ -280,7 +345,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-#menu > p {
+#menu>p {
   font-size: 1.2rem;
   color: #aaa;
   letter-spacing: 2px;
@@ -352,7 +417,8 @@ body {
   height: 60px;
   object-fit: cover;
   border-radius: 50%;
-  background-color: #333; /* pour le fond si pas d'image */
+  background-color: #333;
+  /* pour le fond si pas d'image */
 }
 
 /* Nom du plat */
@@ -384,7 +450,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-#specials > p {
+#specials>p {
   font-size: 1.2rem;
   color: #aaa;
   letter-spacing: 2px;
@@ -454,7 +520,8 @@ body {
   height: 300px;
   background-color: #333;
   border-radius: 20px;
-  background-image: url(img/imgs2.jpg); /* à remplacer par une vraie image */
+  background-image: url(img/imgs2.jpg);
+  /* à remplacer par une vraie image */
   background-size: cover;
   background-position: center;
 }
@@ -484,7 +551,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-#reservation > p {
+#reservation>p {
   font-size: 1.2rem;
   color: #aaa;
   letter-spacing: 2px;
@@ -551,7 +618,7 @@ body {
 }
 
 #reservation button:hover {
-  background-color:  #9e7609;
+  background-color: #9e7609;
   color: #eee;
 }
 
@@ -628,7 +695,7 @@ body {
 }
 
 /* Conteneur des membres */
-.team > div {
+.team>div {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
   gap: 30px;
@@ -636,7 +703,7 @@ body {
 }
 
 /* Carte de membre */
-.team > div > div {
+.team>div>div {
   background-color: #1a1a1a;
   border-radius: 12px;
   padding: 20px;
@@ -644,7 +711,7 @@ body {
   box-shadow: 0 0 10px rgba(255, 255, 255, 0.03);
 }
 
-.team > div > div:hover {
+.team>div>div:hover {
   transform: translateY(-5px);
   box-shadow: 0 0 20px rgba(233, 30, 99, 0.3);
 }
@@ -670,6 +737,7 @@ body {
   font-size: 1rem;
   color: #ccc;
 }
+
 #contact {
   background-color: #111;
   color: #fff;
@@ -678,7 +746,7 @@ body {
   font-family: 'Segoe UI', sans-serif;
 }
 
-#contact > p {
+#contact>p {
   font-size: 1.2rem;
   color: #aaa;
   letter-spacing: 2px;
@@ -751,7 +819,7 @@ body {
 }
 
 .contact-form button:hover {
-  background-color:#9e7609;
+  background-color: #9e7609;
   color: #eee;
 }
 
@@ -825,6 +893,7 @@ footer .social-icons a:hover img {
     border-bottom: 1px solid #333;
   }
 }
+
 /* Responsive */
 @media (max-width: 768px) {
   .banner h2 {
@@ -852,6 +921,7 @@ footer .social-icons a:hover img {
     text-align: center;
   }
 }
+
 /* Responsive */
 @media (max-width: 768px) {
   .box-argument-container {
@@ -878,7 +948,8 @@ footer .social-icons a:hover img {
     margin-top: 10px;
   }
 }
-   /* Responsive */
+
+/* Responsive */
 @media (max-width: 768px) {
   .dish-desc {
     flex-direction: column;
@@ -896,6 +967,7 @@ footer .social-icons a:hover img {
     padding: 20px;
   }
 }
+
 /* Responsive spacing */
 @media (max-width: 600px) {
   .gallery {
@@ -923,6 +995,7 @@ footer .social-icons a:hover img {
     font-size: 1rem;
   }
 }
+
 /* Responsive */
 @media (max-width: 600px) {
   footer p {
