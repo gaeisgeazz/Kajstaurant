@@ -17,7 +17,10 @@
     </div>
     <div class="navbar">
       <h1 class="logo">Kajstaurant</h1>
-      <nav>
+      <button class="hamburger" id="hamburger">
+        ☰
+      </button>
+      <nav id="nav-menu">
         <ul class="nav-links">
           <li><a href="#">Accueil</a></li>
           <li><a href="#about">À propos</a></li>
@@ -27,6 +30,7 @@
       </nav>
     </div>
   </header>
+  
 
   <section class="banner">
     <h2>Bienvenue dans mon Restaurant</h2>
@@ -68,18 +72,18 @@
     <div class="box-argument-container">
       <div class="box-argument">
         <h3>01</h3>
-        <h4>Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat numquam.</p>
+        <h4>Se faire plaisir :</h4>
+        <p>goûter de nouveaux plats, découvrir des saveurs sans avoir à cuisiner soi-même.</p>
       </div>
       <div class="box-argument">
         <h3>02</h3>
-        <h4>Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat numquam.</p>
+        <h4>Vivre une expérience :</h4>
+        <p>ambiance, service, décoration, musique… tout contribue à créer un moment spécial.</p>
       </div>
       <div class="box-argument">
         <h3>03</h3>
-        <h4>Lorem Ipsum</h4>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt placeat numquam.</p>
+        <h4>Partager un moment social :</h4>
+        <p>dîner en famille, entre amis, en amoureux ou même pour des rendez-vous professionnels.</p>
       </div>
     </div>
   </section>
@@ -87,7 +91,7 @@
   <section id="menu">
     <p>MENU</p>
     <div class="trait"></div>
-    <h3>Check Our Tasty Menu</h3>
+    <h3>Consultez notre menu savoureux</h3>
     <div class="tiny-header">
       <ul>
         <li>All</li>
@@ -99,75 +103,83 @@
     <div class="list-menu">
       <img src="img/bouf/bouf1.jpg" alt="" id="img-menu">
       <p>Rhumstek de boeuf roti...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$20.95</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf2.jpg" alt="" id="img-menu">
       <p>Recette saint Jacques...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$8.99</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf3.jpg" alt="" id="img-menu">
       <p>Boeuf shriner...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$7.13</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf4.jpg" alt="" id="img-menu">
       <p>Poulet grillé avec portion de frite...............................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$28.78</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf5.jpg" alt="" id="img-menu">
       <p>Colombo de poulet Accra lambi grillé...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$9.14</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf6.jpg" alt="" id="img-menu">
       <p>Chiken mushron risotto...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$10.90</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf7.jpg" alt="" id="img-menu">
       <p>Bavarois au chocolat blanc et framboise...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$11.67</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf8.jpg" alt="" id="img-menu">
       <p>Lobters Bisque...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$12.54</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf9.jpg" alt="" id="img-menu">
       <p>Lobters Bisque...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$34.78</p>
     </div>
     <div class="list-menu">
       <img src="img/bouf/bouf10.jpg" alt="" id="img-menu">
       <p>Lobters Bisque...............................................</p>
-      <p class="price">$5.95</p>
+      <p class="price">$5.90</p>
     </div>
   </section>
   <section id="specials">
     <p>Specials
     <div class="trait"></div>
     </p>
-    <h2>Check Our Special</h2>
+    <h2>Consultez notre offre spéciale</h2>
     <div class="big-trait"></div>
     <ul>
-      <li> Lorem ipsum dolor sit amet consectetur</li>
-      <li> Lorem ipsum dolor sit amet consectetur</li>
-      <li> Lorem ipsum dolor sit amet consectetur</li>
-      <li> Lorem ipsum dolor sit amet consectetur</li>
+      <li> Bœuf braisé au vin noir</li>
+      <li> Risotto d'encre noire</li>
+      <li> Burger Black Smoke</li>
+      <li> Tartare de thon rouge et grenade</li>
     </ul>
     <div class="dish-desc">
       <div class="dish"></div>
       <div class="desc">
-        <h4>Architecto ut aperian autem id</h4>
+        <h4>Notre Architecture</h4>
         <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit.
-          Voluptatum rem molestiae iure illo libero eveniet corrupti <br>
-          reiciendis quisquam, delectus minima consectetur dicta, nobis
-          nulla architecto, amet officia sit laboriosam? Inventore.
+          1. Entrée principale : <br>
+          Porte large et accueillante, parfois vitrée pour laisser entrer la lumière naturelle.
+          Marquise ou enseigne visible avec le nom du restaurant.
+          Petit espace d'attente ou bancs pour patienter. <br>
+          2. Hall d'accueil : <br>
+          Réception ou pupitre d'hôtesse pour guider les clients.
+          Vestiaire ou espace pour déposer les manteaux. <br>
+          3. Salle de restauration : <br>
+          Espace ouvert : grande salle avec disposition aérée des tables.
+          Espaces semi-privés : petites alcôves ou box pour plus d'intimité.
+          Décoration : dépend du thème (gothique, moderne, rustique…).
+          Éclairage : doux et tamisé pour créer une ambiance agréable.
         </p>
       </div>
     </div>
@@ -221,27 +233,27 @@
       <!-- Membre 1 -->
       <div>
         <img src="img/testimonial/testimonial1.jpg" alt="Membre 1" style="background-size: cover;">
-        <h3>Sarah Dubois</h3>
+        <h3>Gabriel Maya</h3>
         <p>Directrice Générale</p>
       </div>
       <!-- Membre 2 -->
       <div>
         <img src="img/testimonial/testimonial3.jpg" alt="Membre 2" style="background-size: cover;">
-        <h3>Jean Koffi</h3>
+        <h3>Emiliana mbondi</h3>
         <p>Responsable Technique</p>
       </div>
 
       <!-- Membre 3 -->
       <div>
         <img src="img/testimonial/testimonial4.jpg" alt="Membre 3" style="background-size: cover;">
-        <h3>Amélie Laurent</h3>
+        <h3>Kis</h3>
         <p>Chargée Marketing</p>
       </div>
 
       <!-- Membre 4 -->
       <div>
         <img src="img/testimonial/testimonial5.jpg" alt="Membre 4" style="background-size: cover;">
-        <h3>Mohamed Ali</h3>
+        <h3>Prado wilfrid</h3>
         <p>Support Client</p>
       </div>
 
@@ -263,7 +275,7 @@
         <label for="message">Message :</label>
         <textarea id="message" name="message" rows="4" required></textarea>
 
-        <button type="submit">Envoyer</button>
+        <button type="button" onclick="alert('Contact Enregistré')">Envoyer</button>
       </form>
     </div>
   </section>
@@ -272,9 +284,9 @@
     <p>&copy; 2025 Kajstaurant. Tous droits réservés.</p>
     <p>Suivez-nous sur les réseaux sociaux :</p>
     <div class="social-icons">
-      <a href="#"><img src="img/logo/logo1.jpg" alt="Facebook"></a>
-      <a href="#"><img src="img/logo/logo2.jpg" alt="Twitter"></a>
-      <a href="#"><img src="img/logo/logo3.jpg" alt="Instagram"></a>
+      <a href="http://Facebook.com"><img src="img/logo/logo1.jpg" alt="Facebook"></a>
+      <a href="http://Instagram.com"><img src="img/logo/logo2.jpg" alt="Twitter"></a>
+      <a href="http://x.vom"><img src="img/logo/logo3.jpg" alt="Instagram"></a>
     </div>
     <p>cité des palmiers , Douala Cameroun</p>
     <p>+237 654259762</p>
